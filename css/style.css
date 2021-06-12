@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
 }
 
 .tag{
@@ -15,13 +16,13 @@ div{
 
 header{
     grid-area: cabecalho;
-    background: linear-gradient(to right,rgb(243, 116, 169),rgb(219, 219, 238));
+    background: linear-gradient(to right,rgb(179, 166, 171),rgb(219, 219, 238));
     color:white;
 
-    display: grid;
+    display: flex;
     justify-content: center;
     align-items: center; 
-    text-align: center;
+    
 }
 nav{
     grid-area: navegacao;
@@ -36,7 +37,8 @@ footer{
 }
 
 body {
-    background-color: #474e5d;
+    /*background-color: #474e5d;*/
+    background: linear-gradient(to right,rgb(179, 166, 171),rgb(219, 219, 238));
     display: grid;
     min-height: 100vh;
     grid-template-columns: 300px 1fr;
@@ -48,7 +50,9 @@ body {
     font-family:sans-serif;
 }
 
-
+#nome_p{
+    display: none;
+}
 
 @media(max-width: 700px){
     body{
@@ -60,6 +64,12 @@ body {
         'conteudo'
         'rodape'
     ;
+    }
+    #nome_g{
+        display: none;
+    }
+    #nome_p{
+        display: block;
     }
 
 }
@@ -89,15 +99,16 @@ body {
     position: relative;
     background-color: inherit;
     width: 50%;
+    
   }
   
   /* The circles on the timeline */
   .container::after {
     content: '';
     position: absolute;
-    width: 25px;
-    height: 25px;
-    right: -17px;
+    width: 15px;
+    height: 15px;
+    right: -12px;
     background-color: white;
     border: 4px solid #FF9F55;
     top: 15px;
@@ -145,7 +156,7 @@ body {
   
   /* Fix the circle for containers on the right side */
   .right::after {
-    left: -16px;
+    left: -12px;
   }
   
   /* The actual content */
