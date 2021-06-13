@@ -36,17 +36,70 @@ footer{
     grid-area: rodape;
 }
 
+.perfprof{
+  grid-area: perfprof;
+}
+
+.resquali{
+  grid-area: resquali;
+}
+
+.formaca{
+grid-area: formaca;
+display: flex;
+flex-direction: row;
+
+
+}
+
+.certifi{
+  grid-area: certifi;
+}
+
+.formcom{
+  grid-area: formcom;
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+}
+
+/*Conteudo Educação - Inicio*/
+
+.conteudo-educacao{
+  background-color: white;
+  width: 400px;
+  height: 200px;
+  font-size: 14px;
+  margin: 10px;
+
+}
+
+.periodo{
+  background-color: #0487CC;
+  text-align: center;
+  color: white;
+  width: 150px;
+}
+
+.li-especialidade{
+  list-style:none; 
+ }
+
+/*Conteudo Educação - Fim*/
+
+
 body {
     /*background-color: #474e5d;*/
     background: linear-gradient(to right,rgb(179, 166, 171),rgb(219, 219, 238));
     display: grid;
     min-height: 100vh;
-    grid-template-columns: 300px 1fr;
-    grid-template-rows: 200px 1fr 100px;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
     grid-template-areas: 
-        'cabecalho cabecalho'
-        'navegacao conteudo'
-        'rodape rodape';
+        'cabecalho cabecalho cabecalho cabecalho'
+        'perfprof resquali resquali resquali'
+        'conteudo conteudo conteudo conteudo'
+        'formaca formaca formcom formcom';
     font-family:sans-serif;
 }
 
@@ -57,12 +110,15 @@ body {
 @media(max-width: 700px){
     body{
     grid-template-columns: 1fr;
-    grid-template-rows:200px 80px 1fr 100px;
+    grid-template-rows:auto;
     grid-template-areas: 
-        'cabecalho'
-        'navegacao'
-        'conteudo'
-        'rodape'
+    'cabecalho'
+    'perfprof'
+    'resquali'
+    'conteudo'
+    'formaca'
+    'certifi'
+    'formcom'
     ;
     }
     #nome_g{
@@ -71,7 +127,20 @@ body {
     #nome_p{
         display: block;
     }
-
+    .formaca{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+    }
+    .formcom{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+    }
+    .conteudo-educacao{
+      width: 250px;
+      height: 200px;
+    }
 }
 
 /* The actual timeline (the vertical ruler) */
