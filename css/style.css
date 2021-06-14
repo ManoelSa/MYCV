@@ -53,12 +53,16 @@ footer{
 grid-area: formaca;
 display: flex;
 flex-direction: row;
+flex-wrap:wrap;
 
 
 }
 
 .certifi{
   grid-area: certifi;
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
 }
 
 .formcom{
@@ -102,10 +106,11 @@ body {
     grid-template-columns: auto;
     grid-template-rows: auto;
     grid-template-areas: 
-        'cabecalho cabecalho cabecalho cabecalho'
-        'perfprof resquali resquali resquali'
-        'conteudo conteudo conteudo conteudo'
-        'formaca formaca formcom formcom';
+    'cabecalho cabecalho cabecalho cabecalho'
+    'perfprof resquali resquali resquali'
+    'conteudo conteudo conteudo conteudo'
+    'formaca formaca formaca certifi'
+    'formcom formcom formcom formcom';
     font-family:sans-serif;
 }
 
@@ -114,7 +119,8 @@ body {
 }
 
 .titulo{
-  text-align: center;
+  text-align: left;
+  margin-left: 20px;
 }
 
 @media(max-width: 700px){
