@@ -7,12 +7,15 @@
     <title>Curriculo</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Poppins:500" rel="stylesheet">
     <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> 
      -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="js/script.js"></script>
 </head>
 <body>
-   
-    <header class="tag">
+     
+    <header >
         <div>
             <h2 id="nome_g">Manoel Messias Hora de Sá </h2>
             <h2 id="nome_p">Manoel Sá </h2>
@@ -20,8 +23,8 @@
         </div>
         <div>
         <p>
-            <i class="material-icons">home</i> Rua Delfim Moreira, 299 Vila Rossi, Francisco Morato - SP.<br>
-            <i class="material-icons">phone</i> (11) 9-8380-9832
+            <i class="material-icons">location_on</i> Rua Delfim Moreira, 299 Vila Rossi, Francisco Morato - SP.<br>
+            <i class="material-icons">phone_iphone</i> (11) 9-8380-9832
             <br>
             <i class="material-icons">email</i> mmessias.sa@gmail.com
             <br>
@@ -33,19 +36,29 @@
     </header>
      
 
-    <!-- <nav class="tag"><div><h2>Resumo das Qualificações</h2> </div>  </nav> -->
+    <!-- <nav ><div><h2>Resumo das Qualificações</h2> </div>  </nav> -->
      
-    <div class="perfprof tag"><h2>Perfil Professional</h2> </div>
+    <div class="perfprof "><h2>Perfil Professional</h2> 
+    <p class="recuo">Com mais de 12 anos de mercado de trabalho já passou por diferentes áreas. Nos últimos 4 anos dedicou-se somente a Tecnologia da Informação o que inclui aprendizados com Windows Server, Linux, Programação Web. Participou e foi responsável em administrar toda implantação de uns dos principais feitos no departamento técnico do Grupo Furnax. Atualmente vem aprofundando-se em conhecimentos com Big Data na equipe BlueShift Brasil.</p>
+    
+    </div>
    
    
-    <div class="resquali tag"><h2>Resumo das Qualificações</h2> </div>
+    <div class="resquali "><h2>Resumo das Qualificações</h2> 
+  <ul>
+      <li>Atuei junto com a Squad de BigData no projeto NETSHOES/MAGALU em uma das frentes com banco de dados Oracle e com a ferramenta de extração ODI - Oracle Data Integrator, mas também colaborei com outras equipes atuando com SQL Server, Talend.</li>
+      <li>Construí projetos internos na BlueShift Academy fazendo uso de: NIFI, MySQL, Power BI, Cluster Spark, Blob Storage, PySpark, Azure Data Factory, SQL Server, Databriks.</li>
+      <li>Desenvolvi ferramentas para gerenciar todo fluxo de orçamentos utilizando banco de dados access com programação VBA (Grupo Furnax).</li>
+      <li>Criei uma SPA (single-page application) utilizando recursos do Google Apps Script integrado ao google planilhas, esta aplicação é responsável em incluir pedidos de vendas dos representantes externos e direcionar para as partes interessadas (Grupo Furnax).</li>
+      <li>Participei de projetos importantes, o mais atual foi a implantação de um App voltado para atendimento técnico o qual é integrado com o ERP, tive como responsabilidade em administrar e realizar o levantamento de requisitos. Esta integração rendeu ao departamento um crescimento no faturamento de 20% (Grupo Furnax).</li>
+  </ul>
+    
+    </div>
    
 
     <!-- Formação Academica -->
-     
-    <div>
-      <h2 class="titulo">Formação Academica</h2>
-    <div class="formaca tag">
+    <h2 class="h2_formaca">Formação Academica </h2>
+    <div class="formaca ">
     <div class="conteudo-educacao">
       <div class="periodo">
         <h3>2012 - 2016</h3>
@@ -99,15 +112,12 @@
     </div>
   
     </div>
-  </div>
+
  
 
    <!-- Formação Complementar -->
-    
-    <div>
-      <h2 class="titulo">Formação Complementar</h2>
-    <div class="formcom tag">
-    
+   <h2 class="h2_formcom">Formação Complementar </h2>
+    <div class="formcom ">    
       <div class="conteudo-educacao">
         <div class="periodo">
           <h3>2009 - 2011</h3>
@@ -239,14 +249,11 @@
       </div>
     
     </div>    
-    </div>
-   
+    
 
     <!-- Certificações -->
-     
-    <div>
-      <h2 class="titulo">Certificações</h2>
-    <div class="formaca tag">
+    <h2 class="h2_certifi">Certificações </h2>
+    <div class="certifi ">
     <div class="conteudo-educacao">
       <div class="periodo">
         <h3>06/2021</h3>
@@ -273,54 +280,62 @@
       </ul>      
     </div>
     </div>
-    </div>
+ 
    
 
-  <!-- Certificações -->
+  <!-- Experiencia Profissional -->
    
-    <main class="tag"><div><h2>Experiência Profissional</h2></div>
+    <main >
+        <div id="exp_prof">
+            <h2><i id="exp_add" class="material-icons" style="cursor: pointer;">add_circle</i> Experiência Profissional</h2>
+        </div>
         <div class="timeline">
-            <div class="container left">
-              <div class="content">
-                <h2>10/2020 a Atual</h2>
-                <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-              </div>
-            </div>
+          
             <div class="container right">
               <div class="content">
-                <h2>09/2020 a 10/2020</h2>
-                <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+                <h3>Engenheiro de Dados</h3>
+                <h4>Bueshift Brasil</h4>
+                <h4>09/2020 a Atual</h4>
+                <p>Projeto NETSHOES/MAGALU</p>
               </div>
             </div>
             <div class="container left">
               <div class="content">
-                <h2>2017 a 2020</h2>
-                <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+                <h3>Analista Técnico de Informática</h3>
+                <h4>Grupo Furnax</h4>
+                <h4>2017 a 2020</h4>
+                <p>● Administração de Redes de Computadores com Windows Server e Linux; ● Manutenção preventiva e corretiva em Desktops, Notebooks; ● Suporte técnico em ERP e ferramentas de uso diário aos usuários da organização; ● Testes de versões de sistema ERP em ambiente de homologação. ● Gerenciamento de contratos técnicos.</p>
               </div>
             </div>
             <div class="container right">
               <div class="content">
-                <h2>2014 a 2017</h2>
-                <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+                <h3>Técnico (Vendas Técnicas)</h3>
+                <h4>Grupo Furnax</h4>
+                <h4>2014 a 2017</h4>
+                <p>Atendimento receptivo e ativo para vendas de peças técnicas, elaboração de orçamentos, controles de compras de produtos importados e nacionais.</p>
               </div>
             </div>
             <div class="container left">
               <div class="content">
-                <h2>2011 a 2013</h2>
-                <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+                <h3>Coordenação (Serviços Técnicos)</h3>
+                <h4>Grupo Furnax</h4>
+                <h4>2011 a 2013</h4>                
+                <p>Responsável por coordenar uma equipe com 4 integrantes, com foco em atendimento ao cliente para instalações de equipamentos, manutenções corretivas e preventivas.</p>
               </div>
             </div>
             <div class="container right">
               <div class="content">
-                <h2>2008 a 2010</h2>
-                <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+                <h3>Auxiliar (Serviços Administrativos)</h3>
+                <h4>Grupo Furnax</h4>
+                <h4>2008 a 2010</h4>
+                <p>Prestação de contas referente a despesas de viagens, fechamento de caixa, construção de planilhas/gráficos.</p>
               </div>
             </div>
           </div>
         
     </main> 
     
-  <!-- <footer class="tag">RODAPÉ</footer> -->
-  
+  <!-- <footer >RODAPÉ</footer> -->
+
 </body>
 </html>
