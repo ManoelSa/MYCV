@@ -7,13 +7,10 @@
     
 }
 
-
-
 div{
     padding: 10px;
   
 }
-
 /* Estrutura - Inicio */
 header{
     grid-area: cabecalho;
@@ -38,6 +35,7 @@ body {
   grid-template-areas: 
   'cabecalho cabecalho cabecalho cabecalho cabecalho cabecalho'
   'perfprof perfprof perfprof resquali resquali resquali'
+  'h2_expprof h2_expprof h2_expprof h2_expprof h2_expprof h2_expprof'
   'conteudo conteudo conteudo conteudo conteudo conteudo'
   'h2_formaca h2_formaca h2_formaca h2_formaca h2_formaca h2_formaca'
   'formaca formaca  formaca formaca formaca formaca'
@@ -79,6 +77,7 @@ grid-area: formaca;
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
+display: none;
 }
 
 .certifi{
@@ -86,6 +85,7 @@ flex-wrap: wrap;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  display: none;
   
 }
 
@@ -94,7 +94,15 @@ flex-wrap: wrap;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  display: none;
+  
  
+}
+
+.geral{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 /* Estrutura - Fim */
 
@@ -127,17 +135,23 @@ flex-wrap: wrap;
 /*Titulos Personalizados - Inicio */
 .h2_certifi{
   grid-area: h2_certifi;
-  text-align: center;
+  text-align: left;
   margin: 10px;
 }
 .h2_formaca{
   grid-area: h2_formaca;
-  text-align: center;
+  text-align: left;
   margin: 10px;
 }
 .h2_formcom{
   grid-area: h2_formcom;
-  text-align: center;
+  text-align: left;
+  margin: 10px;
+}
+
+.h2_expprof{
+  grid-area: h2_expprof;
+  text-align: left;
   margin: 10px;
 }
 
@@ -177,6 +191,7 @@ p{
     'cabecalho'
     'perfprof'
     'resquali'
+    'h2_expprof'
     'conteudo'
     'h2_formaca'
     'formaca'
@@ -191,18 +206,7 @@ p{
     }
     #nome_p{
         display: block;
-    }
-    .formaca{
-      display: flex;
-      flex-direction: column;
-      flex-wrap: nowrap;
-    }
-    .formcom{
-      display: flex;
-      flex-direction: column;
-      flex-wrap: nowrap;
-    }
-   
+    }  
     
 }
 
