@@ -175,11 +175,11 @@ display: none;
   margin-left: 20px;
 }
 p{
-  text-align:justify;
+  text-align:left;
 }
 
 .jusfify{
-  text-align: justify;
+  text-align: left;
 }
 
 .recuo{
@@ -215,6 +215,7 @@ li {
     'certifi'
     'h2_formcom'
     'formcom'
+    
     ;
     }
  
@@ -363,4 +364,19 @@ li {
     }
   }
 
+
+  .voltar-ao-topo {
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 12px;
+    padding: 1em;
+    display: none;
+}
+.voltar-ao-topo:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
 
