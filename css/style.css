@@ -223,9 +223,13 @@ li {
     }
     header{
       display: flex;
-      flex-direction: column;
-      
-      
+      flex-direction: column;    
+    }
+    body{
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-top: 10px;
+     
     }
     
 }
