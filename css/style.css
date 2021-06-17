@@ -112,7 +112,7 @@ display: none;
 .conteudo-educacao{
   background-color: white;
   width: 290px;
-  height: 225px;
+  height: auto;
   margin: 10px;
   box-shadow: 0px 4px 2px 0px rgb(25, 118, 210);
   border-radius: 10px;
