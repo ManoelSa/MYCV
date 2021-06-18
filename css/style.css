@@ -181,6 +181,10 @@ li {
     list-style-type: none;
 }
 
+.li_modelo {
+    list-style-type:square;
+}
+
 .info_header {
     text-align: center;
 }
@@ -387,8 +391,9 @@ li {
         -ms-filter: none !important;
     }
     body {
-        margin: 0;
-        padding: 0;
+        margin-top: 30px;
+        padding: 8px;
+        border: solid;
         line-height: 1.4em;
         font: 12pt sans-serif, "Times New Roman", Times, serif;
     }
@@ -398,7 +403,10 @@ li {
     }
     @page {
         margin: 0.5cm;
+        size: A4 portrait; 
+                  
     }
+
     nav,
     footer,
     video,
@@ -461,8 +469,13 @@ li {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+       
     }
     .imprimir {
         display: none;
     }
+
+    
 }
+
+

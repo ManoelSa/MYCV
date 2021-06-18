@@ -8,14 +8,11 @@ function recebe_id(parametro) {
     } else if (id_retorno == '#foracad') {
         $(id_retorno).find('i').toggleClass('fa-minus-circle fa-plus-circle');
         $('.formaca').toggleClass('ocultar geral');
-        //$('.formaca').toggle(1000);
     } else if (id_retorno == '#forcomp') {
         $(id_retorno).find('i').toggleClass('fa-minus-circle fa-plus-circle');
-        //$('.formcom').toggle(1000);
         $('.formcom').toggleClass('ocultar geral');
     } else if (id_retorno == '#certf') {
         $(id_retorno).find('i').toggleClass('fa-minus-circle fa-plus-circle');
-        //$('.certifi').toggle(1000);
         $('.certifi').toggleClass('ocultar geral');
     } else {
         console.log('Sem Registro')
