@@ -402,7 +402,7 @@ li {
         flex-direction: row;
     }
     @page {
-        margin: 0.5cm;
+        margin: 0.0cm;
         size: A4 portrait; 
                   
     }
